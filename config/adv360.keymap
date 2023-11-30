@@ -64,7 +64,7 @@
       };
 
       hm_rpi: homerow_mods_prior_idle {
-          flavor = "balanced";
+          flavor = "tap-preferred";
           tapping-term-ms = <200>;
 //          quick-tap-ms = <175>;                // repeat on tap-into-hold
           require-prior-idle-ms = <150>;
@@ -76,7 +76,7 @@
       };
 
       hm_alt: homerow_mods_alt {
-          flavor = "balanced";
+          flavor = "tap-preferred";
           tapping-term-ms = <200>;
 //          quick-tap-ms = <175>;                // repeat on tap-into-hold
           require-prior-idle-ms = <190>;
