@@ -134,7 +134,7 @@
     #define _NEXTS &kp LC(RIGHT)     // Next screen
     #define _PREVS &kp LC(LEFT)      // Previous screen
 
-    #define QWE_K 0 // ColemakDH
+    #define QWE_K 0 // QWERTY
     #define CDH_K 4 // ColemakDH
 
   keymap {
