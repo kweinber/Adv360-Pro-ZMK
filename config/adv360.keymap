@@ -146,7 +146,7 @@
 
     default_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog KEY_K                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL &lt QWE_K N1    &lt CDH_K N2   &kp N3   &kp N4     &kp N5 &tog KEY_K                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &kp C_BRI_UP                                                     &kp C_VOL_UP &kp Y  &kp U   &kp I     &kp O    &kp P    &kp BSLH
         &kp ESC   &kp A     _S_OPT   _D_CMD   _F_SFT     &kp G  &kp C_BRI_DN           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp H  _J_SFT  _K_CMD    _L_OPT   &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    _V_CTL     &kp B                            &kp HOME &kp PG_UP                                  &kp N  _M_CTL  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
@@ -155,7 +155,7 @@
     };
     keypad {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo MOD_K &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+        &kp EQUAL &lt QWE_K N1    &lt CDH_K N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo MOD_K &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &trans                                                           &trans &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
         &kp ESC  &kp A     &kp S    &kp D    &kp F      &kp G  &trans           &kp LGUI &kp LALT &kp RGUI &kp RCTRL           &trans &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
@@ -164,7 +164,7 @@
     };
     fn {
       bindings = <
-        &kp F12 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &tog KEY_K                                           &mo 3 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+        &kp F12 &lt QWE_K F1 &lt CDH_K F2 &kp F3 &kp F4 &kp F5 &tog KEY_K                                           &mo 3 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
         &trans  &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
@@ -183,7 +183,7 @@
     };
       colemak_dh_layer {
       bindings = <
-        &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL &lt QWE_K N1  &lt CDH_K N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp B  &kp C_BRI_UP                                                     &kp C_VOL_UP &kp J  &kp L   &kp U     &kp Y    &kp SEMI    &kp BSLH
         &kp ESC   &kp A     &kp R    &kp S    &kp T     &kp G  &kp C_BRI_DN           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp D     &kp V                            &kp HOME &kp PG_UP                                  &kp K   &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
