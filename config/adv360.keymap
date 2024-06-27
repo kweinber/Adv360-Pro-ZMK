@@ -183,7 +183,7 @@
     };
       colemak_dh_layer {
       bindings = <
-        &kp EQUAL &kp N1  &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp EQUAL &kp N1  &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp B   &to QWE_K                                                     &kp C_VOL_UP &kp J  &kp L   &kp U     &kp Y    &kp SEMI    &kp BSLH
         &kp ESC   &kp A     &kp R    &kp S    &kp T     &kp G  &to CDH_K           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp D     &kp V                            &kp HOME &kp PG_UP                                  &kp K   &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
