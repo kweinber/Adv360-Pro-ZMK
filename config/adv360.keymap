@@ -135,10 +135,10 @@
     #define _PREVS &kp LC(LEFT)      // Previous screen
 
     #define QWE_K 0 // QWERTY
-    #define FUN_K 2 // Function
-    #define KEY_K 4 // ColemakDH
-    #define MOD_K 3 // ColemakDH
-    #define CDH_K 4 // ColemakDH
+    #define CDH_K 1 // ColemakDH
+    #define KEY_K 2 // Keypad
+    #define FUN_K 3 // Function
+    #define MOD_K 4 // Mod
   
 
   keymap {
@@ -153,6 +153,15 @@
         &mo FUN_K      &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT &mo FUN_K 
       >;
     };
+      colemak_dh_layer {
+      bindings = <
+        &kp EQUAL &kp N1  &kp N2   &kp N3   &kp N4     &kp N5 &tog KEY_K                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
+        &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp B   &to QWE_K                                                     &kp C_VOL_UP &kp J  &kp L   &kp U     &kp Y    &kp SEMI    &kp BSLH
+        &kp ESC   &kp A     &kp R    &kp S    &kp T     &kp G  &to CDH_K           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
+        &kp LSHFT &kp Z     &kp X    &kp C    &kp D     &kp V                            &kp HOME &kp PG_UP                                  &kp K   &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+        &mo FUN_K      &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT &mo FUN_K 
+      >;
+    };
     keypad {
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo MOD_K &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
@@ -164,7 +173,7 @@
     };
     fn {
       bindings = <
-        &kp F12 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &tog KEY_K                                           &mo 3 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+        &kp F12 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &tog KEY_K                                           &mo MOD_K &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
         &trans  &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
         &trans  &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
@@ -179,15 +188,6 @@
         &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
         &none &none        &none        &tog CDH_K    &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
-      >;
-    };
-      colemak_dh_layer {
-      bindings = <
-        &kp EQUAL &kp N1  &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
-        &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp B   &to QWE_K                                                     &kp C_VOL_UP &kp J  &kp L   &kp U     &kp Y    &kp SEMI    &kp BSLH
-        &kp ESC   &kp A     &kp R    &kp S    &kp T     &kp G  &to CDH_K           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
-        &kp LSHFT &kp Z     &kp X    &kp C    &kp D     &kp V                            &kp HOME &kp PG_UP                                  &kp K   &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-        &mo FUN_K      &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT &mo FUN_K 
       >;
     };
   };
