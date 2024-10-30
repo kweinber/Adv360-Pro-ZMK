@@ -119,10 +119,11 @@
     #define _J_SFT &hm_sft RSHFT J
     #define _D_CMD &hm_rpi LGUI D   // Command on middle fingers
     #define _K_CMD &hm_rpi RGUI K
-    #define _V_CTL &hm_rpi LCTRL V  // Control on index down
     #define _M_CTL &hm_rpi RCTRL M
+    #define _V_CTL &hm_rpi LCTRL V  // Control on index down
     #define _S_OPT &hm_alt LALT S   // Option on ring finger
     #define _L_OPT &hm_alt RALT L
+    #define _ESC_CTL &hm_rpi LCTRL ESC  // Control on index down
 
     // MacOS shortcuts
     #define _1PASS &kp LG(BSLH)      // 1Password
@@ -148,7 +149,7 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog KEY_K                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &to QWE_K                                                     &kp C_VOL_UP &kp Y  &kp U   &kp I     &kp O    &kp P    &kp BSLH
-        &kp ESC   &kp A     _S_OPT   _D_CMD   _F_SFT     &kp G  &to CDH_K          &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp H  _J_SFT  _K_CMD    _L_OPT   &kp SEMI &kp SQT
+        _ESC_CTL  &kp A     _S_OPT   _D_CMD   _F_SFT     &kp G  &to CDH_K          &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp H  _J_SFT  _K_CMD    _L_OPT   &kp SEMI &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    _V_CTL     &kp B                            &kp HOME &kp PG_UP                                  &kp N  _M_CTL  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo FUN_K      &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT &mo FUN_K 
       >;
@@ -157,7 +158,7 @@
       bindings = <
         &kp EQUAL &kp N1  &kp N2   &kp N3   &kp N4     &kp N5 &tog KEY_K                                                           &mo MOD_K        &kp N6 &kp N7  &kp N8    &kp N9   &kp N0   &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp F    &kp P      &kp B   &to QWE_K                                                     &kp C_VOL_UP &kp J  &kp L   &kp U     &kp Y    &kp SEMI    &kp BSLH
-        &kp ESC   &kp A     &kp R    &kp S    &kp T     &kp G  &to CDH_K           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
+        _ESC_CTL   &kp A     &kp R    &kp S    &kp T     &kp G  &to CDH_K           &kp LGUI &kp LCTRL &kp RALT  &kp RGUI     &kp C_VOL_DN  &kp M  &kp N   &kp E    &kp I   &kp O &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp D     &kp V                            &kp HOME &kp PG_UP                                  &kp K   &kp H  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
         &mo FUN_K      &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp SPACE                     &kp UP   &kp DOWN   &kp LBKT  &kp RBKT &mo FUN_K 
       >;
@@ -166,7 +167,7 @@
       bindings = <
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                           &mo MOD_K &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &trans                                                           &trans &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-        &kp ESC  &kp A     &kp S    &kp D    &kp F      &kp G  &trans           &kp LGUI &kp LALT &kp RGUI &kp RCTRL           &trans &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+        _ESC_CTL  &kp A     &kp S    &kp D    &kp F      &kp G  &trans           &kp LGUI &kp LALT &kp RGUI &kp RCTRL           &trans &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
         &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
         &mo FUN_K     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &mo FUN_K 
       >;
