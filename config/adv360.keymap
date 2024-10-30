@@ -123,7 +123,7 @@
     #define _V_CTL &hm_rpi LCTRL V  // Control on index down
     #define _S_OPT &hm_alt LALT S   // Option on ring finger
     #define _L_OPT &hm_alt RALT L
-    #define _ESC_CTL &hm_rpi LCTRL ESC  // Control on index down
+    #define _ESC_CTL &hm_sft LCTRL ESC  // Control on index down
 
     // MacOS shortcuts
     #define _1PASS &kp LG(BSLH)      // 1Password
